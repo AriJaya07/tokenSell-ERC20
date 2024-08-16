@@ -7,18 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balance",
+				"name": "decimals",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -33,20 +22,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
-						"type": "address"
-					}
-				],
-				"name": "someCrypticFunctionName",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
+						"name": "_to",
 						"type": "address"
 					},
 					{
@@ -74,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SampleVerification.sol": "MyContract"
+			"contracts/SampleTokenSale.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -88,12 +64,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SampleVerification.sol": {
-			"keccak256": "0x6d4615876b1e3c2cf76e68872a77209346db788c593f4784a18f4428bd6fa816",
+		"contracts/SampleTokenSale.sol": {
+			"keccak256": "0xecf78695d96b65b2bf56c2c14ecc2f4ecb2440328b8005e917d12335d4906070",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4abc8b1a6e636591836acea1fd7399492d21829e9cfcbd748f62044360ae29b7",
-				"dweb:/ipfs/QmaH2HkH2KsEsnvAAPxEwKHMJYknjtVnLakNFhbE36orcq"
+				"bzz-raw://8fec1bea711d5dd621e5d45564f4fc25d324c5f57b44ae7eef99981aaf39b3ff",
+				"dweb:/ipfs/QmPSDRbTaqRMtH96uJGZ1P4uaw6PPpUXb74Y4eno8WAGQ4"
 			]
 		}
 	},

@@ -7,23 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balance",
+				"name": "decimals",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "uint8",
 						"name": "",
-						"type": "uint256"
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -33,30 +22,28 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_addr",
+						"name": "_from",
 						"type": "address"
-					}
-				],
-				"name": "someCrypticFunctionName",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "_to",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_value",
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
-				"outputs": [],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -74,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SampleVerification.sol": "MyContract"
+			"contracts/SampleTokenSale.sol": "ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -88,12 +75,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SampleVerification.sol": {
-			"keccak256": "0x6d4615876b1e3c2cf76e68872a77209346db788c593f4784a18f4428bd6fa816",
+		"contracts/SampleTokenSale.sol": {
+			"keccak256": "0xc46b593ba3a913161786bd33d7a57d38175548f15fe827db4bd60e9b1dce953a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4abc8b1a6e636591836acea1fd7399492d21829e9cfcbd748f62044360ae29b7",
-				"dweb:/ipfs/QmaH2HkH2KsEsnvAAPxEwKHMJYknjtVnLakNFhbE36orcq"
+				"bzz-raw://b84929cc773461d61289237af39970ed4e90f0ab473cd14b0465bcb57bf5a7da",
+				"dweb:/ipfs/QmRoDATtsBKxCMvtrWRV1fyLrgmjWNUDoNfWSreJPoThs6"
 			]
 		}
 	},
